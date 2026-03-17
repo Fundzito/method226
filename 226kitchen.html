@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>226 Method | Kitchen - Cooking, Meals & Prep</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    margin: 0;
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+    background-color: #111;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    z-index: 1000;
+  }
+
+  .nav-link {
+    display: inline-block;
+    color: #b39ddb;
+    font-size: 16px;
+    margin: 5px 8px;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    transition: 0.2s;
+  }
+
+  .nav-link:hover {
+    background-color: purple;
+    color: white;
+  }
+
+  .logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid purple;
+    box-shadow: 0 0 25px purple;
+  }
+
+  h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 10px auto 40px auto;
+  }
+
+  /* Bubble Styles */
+  .bubbles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+  }
+
+  .bubble {
+    background-color: #222;
+    border-radius: 50%;
+    width: 240px;
+    height: 240px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px purple;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    color: white;
+  }
+
+  .bubble:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 35px #b39ddb;
+  }
+
+  .bubble h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+  }
+
+  .bubble p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0;
+  }
+
+  details {
+    margin-top: 20px;
+    text-align: left;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #b39ddb;
+  }
+
+  details[open] summary::after { content: " ▲"; float: right; }
+  details summary::after { content: " ▼"; float: right; }
+
+  .pro-tip {
+    background-color: #2c003e;
+    border-left: 5px solid #8e24aa;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff;
+    text-align: left;
+  }
+
+  .pro-tip strong {
+    color: #b39ddb;
+  }
+
+  @media (max-width: 600px) {
+    h1 { font-size: 32px; }
+    .bubble { width: 180px; height: 180px; padding: 15px; }
+    .bubble h3 { font-size: 18px; }
+    .bubble p { font-size: 14px; }
+    p { font-size: 16px; }
+  }
+
+  @media (max-width: 400px) {
+    .bubble { width: 140px; height: 140px; padding: 10px; }
+    .bubble h3 { font-size: 16px; }
+    .bubble p { font-size: 12px; }
+  }
+
+  footer { margin-top: 40px; font-size: 14px; color: #aaa; }
+
+/* Bubble floating animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.bubble {
+  background-color: #222;
+  border-radius: 50%;
+  width: 240px;
+  height: 240px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px purple;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  color: white;
+  
+  /* Floating animation */
+  animation: float 4s ease-in-out infinite;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <a href="index.html" class="nav-link">Home</a>
+  <a href="226intro.html" class="nav-link">Intro</a>
+  <a href="226workout.html" class="nav-link">Workout</a>
+  <a href="226kitchen.html" class="nav-link">Kitchen</a>
+  <a href="226fun.html" class="nav-link">Fun</a>
+  <a href="226outro.html" class="nav-link">Outro</a>
+</nav>
+
+<!-- Logo -->
+<a href="index.html">
+  <img src="226logo.png" alt="226 Method Logo" class="logo">
+</a>
+
+<h1>The Kitchen - Cooking, Meals & Prep</h1>
+<p>Master your meals, plan ahead, and make healthy swaps without sacrificing taste or convenience. The 226 Method keeps your kitchen fun and practical.</p>
+
+<!-- Meal Tips Bubbles -->
+<h2>Smart Meal Swaps</h2>
+<div class="bubbles">
+  <div class="bubble">
+    <h3>Veggie Swap</h3>
+    <p>Replace fries with roasted veggies, salad, or air-popped popcorn.</p>
+  </div>
+  <div class="bubble">
+    <h3>Protein Upgrade</h3>
+    <p>Choose grilled chicken, fish, or tofu instead of fried meat.</p>
+  </div>
+  <div class="bubble">
+    <h3>Pasta Swap</h3>
+    <p>Whole grain pasta with tomato-based sauce instead of creamy sauces.</p>
+  </div>
+  <div class="bubble">
+    <h3>Smart Drinks</h3>
+    <p>Water, sparkling water, or light wine over sugary beverages.</p>
+  </div>
+  <div class="bubble">
+    <h3>Snack Swap</h3>
+    <p>Fruit, Greek yogurt, or portioned nuts instead of chips or candy.</p>
+  </div>
+
+  <!-- ACV Bubbles -->
+  <div class="bubble">
+    <h3>ACV Boost</h3>
+    <p>1-2 tsp ACV (raw, unfiltered)</p>
+  </div>
+  <div class="bubble">
+    <h3>Add-Ins</h3>
+    <p>Turmeric + black pepper, fresh ginger, lemon juice, honey</p>
+  </div>
+  <div class="bubble">
+    <h3>Instructions</h3>
+    <p>Mix ACV with warm water, add add-ins, stir, drink before meals</p>
+  </div>
+</div>
+
+<details>
+  <summary>226 Pro Tip</summary>
+  <div class="pro-tip">
+    Plan meals ahead and prep in batches. Simple swaps and portion control make healthy eating effortless, even on busy days.
+  </div>
+</details>
+
+<!-- Meal Plate Bubbles -->
+<h2>The 226 Plate</h2>
+<div class="bubbles">
+  <div class="bubble">
+    <h3>Vegetables</h3>
+    <p>40-50% of plate<br>Broccoli, Spinach, Peppers, Green Beans, Mixed Veggies</p>
+  </div>
+  <div class="bubble">
+    <h3>Protein</h3>
+    <p>30-40% of plate<br>Chicken, Fish, Eggs, Lean Beef, Turkey, Tofu</p>
+  </div>
+  <div class="bubble">
+    <h3>Carbs</h3>
+    <p>20-30% of plate<br>Rice, Potatoes, Pasta, Whole Grain Bread, Quinoa</p>
+  </div>
+</div>
+
+<details>
+  <summary>226 Pro Tip</summary>
+  <div class="pro-tip">
+    Keep protein and veggies the main focus. Carbs in moderation give energy without spiking calories. Prepping ahead keeps meals stress-free.
+  </div>
+</details>
+
+<footer>
+© 2026 The 226 Method | TrainWithTonio
+</footer>
+
+</body>
+</html>
